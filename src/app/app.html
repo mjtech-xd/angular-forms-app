@@ -4,23 +4,23 @@
   <form #registrationForm="ngForm">
     <div class="form-group">
       <label>Username</label>
-      <input type="text" [(ngModel)]="username" name="username" #usernameRef="ngModel" required minlength="3"
-        maxlength="20" />
+      <input type="text" [(ngModel)]="username" name="username" #usernameRef="ngModel" required minlength="3" maxlength="20" appNoSpaces/>
       <div class="error-messages">
         @if(usernameRef.errors?.['required'] && usernameRef.touched)
         {
         <span>Username is required.</span>
-
         }
         @if(usernameRef.errors?.['minlength']&& usernameRef.touched)
         {
         <span>Username must be at least 3 characters long.</span>
-
         }
         @if(usernameRef.errors?.['maxlength'] && usernameRef.touched)
         {
         <span>Username must not exceed 20 characters.</span>
-
+        }
+        @if(usernameRef.errors?.['noSpaces'] && usernameRef.touched)
+        {
+        <span>Username cannot contain spaces</span>
         }
       </div>
     </div>

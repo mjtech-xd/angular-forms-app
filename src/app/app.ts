@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { JsonPipe } from '@angular/common';
+import { NoSpaceDirective } from "./directives/no-spaces-directives";
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule, JsonPipe],
+  imports: [FormsModule, JsonPipe, NoSpaceDirective],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
