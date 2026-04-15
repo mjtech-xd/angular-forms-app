@@ -82,3 +82,22 @@ button[type ="submit"]:disabled
     background-color: #d3d6e2;
     cursor: not-allowed;
 }
+
+button[type="button"]
+{
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button[type="button"]:hover
+{
+  background-color: #f8fafc;
+}

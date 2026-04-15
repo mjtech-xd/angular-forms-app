@@ -13,4 +13,7 @@ export class App
   username: string = '';
   email: string = '';
   password: string = '';
+  street: string = '';
+  city: string = '';
+  zip: string = '';
 }
